@@ -1,0 +1,43 @@
+.logo {
+    height: 3em;
+}
+
+.has-bg-img {
+    background-image: url('/images/banner-img.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 20em;
+}
+
+.h1 {
+    color: #2F4858;
+    text-align: center;
+}
+
+.h2 {
+    color: #C23331;
+    text-align: center;
+}
+
+.h3 {
+    color: #2F4858;
+    text-align: center;
+}
+
+.button {
+    border: none;
+    background-color: #7E936E;
+    color: white;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.main-servicesimg {
+    height: 10em;
+}
+
+.main-workimg {
+    height: 10em;
+}
