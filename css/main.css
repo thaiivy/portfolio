@@ -41,3 +41,59 @@
 .main-workimg {
     height: 10em;
 }
+
+/* -----------------ABOUT US PAGE---------------------- */
+.about-banner {
+    background-image: url('/images/aboutme.jpg');
+    opacity: 80%;
+    background-size: cover;
+    background-position: center;
+    height: 20em;
+}
+
+.about-title {
+    text-align: center;
+    color: white;
+}
+
+/* ------------------WEB DEV PAGE------------------- */
+.webdev-banner {
+    background-image: url('/images/webdev.jpg');
+    opacity: 80%;
+    background-size: cover;
+    background-position: center;
+    height: 20em;
+}
+
+.webdev-title {
+    text-align: center;
+    color: white;
+}
+
+/* ------------------PHOTOGRAPHY PAGE------------------- */
+.photography-banner {
+    background-image: url('/images/photography.jpg');
+    opacity: 80%;
+    background-size: cover;
+    background-position: center;
+    height: 20em;
+}
+
+.photography-title {
+    text-align: center;
+    color: white;
+}
+
+/* ------------------ART PAGE------------------- */
+.art-banner {
+    background-image: url('/images/art.jpg');
+    opacity: 80%;
+    background-size: cover;
+    background-position: center;
+    height: 20em;
+}
+
+.art-title {
+    text-align: center;
+    color: white;
+}
