@@ -7,21 +7,27 @@
     background-size: cover;
     background-position: center;
     height: 20em;
+    opacity: 80%;
 }
 
 .h1 {
     color: #2F4858;
     text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
 }
 
 .h2 {
     color: #C23331;
     text-align: center;
+    padding-bottom: 2rem;
 }
 
 .h3 {
     color: #2F4858;
     text-align: center;
+    padding: 4rem;
+    font-weight: 400;
 }
 
 .h4 {
@@ -29,25 +35,76 @@
     text-decoration: none;
 }
 
+.talkhere {
+    text-align: center;
+    padding: 4rem;
+}
 
+.button-container {
+    display: flex;
+    justify-content: center;
+}
 
 .button {
     border: none;
     background-color: #7E936E;
     color: white;
+    width: 23rem;
+    padding: 15px;
+    font-size: 1.5rem;
+    flex-basis: auto;
 }
 
-.button-container {
-    text-align: center;
+.button-left {
+    margin-right: 3rem;
+}
+
+.button-right {
+    margin-left: 3rem;
 }
 
 .main-servicesimg {
-    height: 10em;
+    height: 20rem;
 }
 
 .main-workimg {
-    height: 10em;
+    height: 20rem;
 }
+
+.services-title {
+    padding-bottom: 1.5rem;
+}
+
+.mywork-title {
+    padding-bottom: 1.5rem;
+}
+
+.services {
+    grid-area: services;
+}
+
+.mywork {
+    grid-area: mywork;
+}
+
+.main-grid {
+    text-align: center;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "services mywork"
+    ;
+}
+
+.here {
+    color: #7E936E;
+    font-style: italic;
+}
+
+/* Media Queries for Homepage */
+
 
 /* -----------------ABOUT US PAGE---------------------- */
 .about-banner {
