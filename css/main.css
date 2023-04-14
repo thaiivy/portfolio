@@ -197,7 +197,7 @@ footer {
     }
 }
 
-/* -----------------ABOUT US PAGE---------------------- */
+/* -----------------ABOUT ME PAGE---------------------- */
 .about-banner {
     background-image: url('/images/aboutme.jpg');
     opacity: 80%;
@@ -210,7 +210,112 @@ footer {
     text-align: center;
     color: white;
     font-size: 3rem;
-    /* padding */
+    padding-top: 7.5rem;
+}
+
+.donestuff {
+    padding-top: 3rem;
+}
+
+.h6 {
+    color: #7E936E;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.workbutton-about {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.gettoknow-img {
+    grid-area: gettoknowimg;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.gettoknow-p {
+    grid-area: gettoknowp;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+    color: #2F4858;
+}
+
+.motivations-img {
+    grid-area: motivationsimg;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.motivations-p {
+    grid-area: motivationsp;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+    color: #2F4858;
+}
+
+.aboutme-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr 0.5fr;
+    grid-template-areas:
+    "gettoknowimg"
+    "gettoknowp"
+    "motivationsimg"
+    "motivationsp"
+    ;
+}
+
+.socialbar {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.socialicon {
+    background-color: black;
+    padding: 1rem;
+    border-radius: 50%;
+    color: white;
+    margin: 1rem;
+}
+
+/* Desktop */
+@media screen and (min-width:1024px) {
+
+    .aboutme-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "gettoknowimg gettoknowp"
+        "motivationsp motivationsimg"
+        ;
+    }
+    
+    .gettoknow-img {
+        margin: 0rem 2rem 2rem 2rem;
+    }
+    
+    .gettoknow-p {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        text-align: left;
+        color: #2F4858;
+    }
+    
+    .motivations-img {
+        margin: 0rem 2rem 2rem 2rem;
+    }
+    
+    .motivations-p {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        text-align: right;
+        color: #2F4858;
+    }
+
 }
 
 /* ------------------WEB DEV PAGE------------------- */
@@ -227,6 +332,126 @@ footer {
     color: white;
 }
 
+/* ------------------SERVICES PAGE------------------- */
+
+.servicespagetitle {
+    text-align: center;
+}
+
+.h7 {
+    color: #C23331;
+    font-size: 3rem;
+}
+
+.servicestagline {
+    font-size: 1.5rem;
+    color: #33658A;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.h8 {
+    font-size: 2.3rem;
+}
+
+.webdesign {
+    background-image: url('/images/webdesign.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+}
+
+.webdesign-text {
+    background-color: rgba(47, 72, 88, 0.6);
+    height: 30rem;
+    color: white;
+    text-align: center;
+    padding: 0rem 3rem 0rem 3rem;
+    grid-area: webtext;
+}
+
+.webdesign-img {
+    display: none;
+    grid-area: webimg;
+}
+
+.webmore-img, .photomore-img {
+    margin: 3rem 0rem 2rem 0rem;
+}
+
+.web-more {
+    grid-area: webmore;
+}
+.photography-more {
+    grid-area: photomore;
+}
+
+.webmore-p, .photomore-p {
+    font-size: 1.25rem;
+    font-weight: bolder;
+    color: #33658A;
+    padding: 0rem 3rem 3rem 3rem;
+    text-align: center;
+}
+
+.photography-img {
+    display: none;
+    grid-area: photoimg;
+}
+
+.photography-bg {
+    background-image: url('/images/photographyservice.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+}
+
+.photography-text {
+    background-color: rgba(47, 72, 88, 0.6);
+    height: 30rem;
+    color: white;
+    text-align: center;
+    padding: 0rem 3rem 0rem 3rem;
+    grid-area: phototext;
+}
+
+/* Media Queries for Services page */
+
+/* Tablet */
+@media screen and (min-width:760px) {
+
+    .webdesign-img, .photography-img {
+        display: block;
+    }
+
+    .webdesign, .photography-bg {
+        background-image: none;
+    }
+
+    .webdesign-text, .photography-text {
+        background-color: rgba(47, 72, 88, 0);
+        color: #2F4858;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "webtext webimg"
+        "webmore webmore"
+        "photoimg phototext"
+        "photomore photomore"
+        ;
+    }
+
+}
+
+/* Desktop */
+@media screen and (min-width:1024px) {
+
+    
+}
 /* ------------------PHOTOGRAPHY PAGE------------------- */
 .photography-banner {
     background-image: url('/images/photography.jpg');
@@ -239,6 +464,21 @@ footer {
 .photography-title {
     text-align: center;
     color: white;
+    font-size: 3re;
+    padding-top: 7.5rem;
+}
+
+/* Media Queries for Photography page */
+/* Tablet */
+@media screen and (min-width:760px) {
+
+
+}
+
+/* Desktop */
+@media screen and (min-width:1024px) {
+
+    
 }
 
 /* ------------------ART PAGE------------------- */
@@ -253,4 +493,19 @@ footer {
 .art-title {
     text-align: center;
     color: white;
+    font-size: 3rem;
+    padding-top: 7.5rem;
+}
+
+/* Media Queries for Art page */
+/* Tablet */
+@media screen and (min-width:760px) {
+
+
+}
+
+/* Desktop */
+@media screen and (min-width:1024px) {
+
+    
 }
