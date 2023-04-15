@@ -318,20 +318,6 @@ footer {
 
 }
 
-/* ------------------WEB DEV PAGE------------------- */
-.webdev-banner {
-    background-image: url('/images/webdev.jpg');
-    opacity: 80%;
-    background-size: cover;
-    background-position: center;
-    height: 20em;
-}
-
-.webdev-title {
-    text-align: center;
-    color: white;
-}
-
 /* ------------------SERVICES PAGE------------------- */
 
 .servicespagetitle {
@@ -452,6 +438,54 @@ footer {
 
     
 }
+
+/* ------------------CONTACT PAGE------------------- */
+
+.contact-title {
+    font-size: 3rem;
+    text-align: center;
+    color: #2F4858;
+    padding: 2rem 0rem 3rem 0rem;
+}
+
+.box {
+    border: #33658A solid 2px;
+}
+
+.form {
+    grid-area: form;
+}
+
+.contact-img {
+    grid-area: contactimg;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "form"
+    "contactimg"
+}
+
+.fieldpadding {
+    padding: 0.5rem;
+}
+
+/* Desktop */
+@media screen and (min-width:1024px) {
+    
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "form contactimg"
+    }
+    
+}
+
 /* ------------------PHOTOGRAPHY PAGE------------------- */
 .photography-banner {
     background-image: url('/images/photography.jpg');
@@ -480,6 +514,23 @@ footer {
 
     
 }
+
+/* ------------------WEB DEV PAGE------------------- */
+.webdev-banner {
+    background-image: url('/images/webdev.jpg');
+    opacity: 80%;
+    background-size: cover;
+    background-position: center;
+    height: 20em;
+}
+
+.webdev-title {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    padding-top: 7.5rem;
+}
+
 
 /* ------------------ART PAGE------------------- */
 .art-banner {

@@ -18,19 +18,22 @@
   <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="images/ivyweblogo.png" alt="ivyweb logo" class="logo"></a>
-            <div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="images/ivyweblogo.png" alt="ivyweb logo" class="logo"></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="about.html" aria-current="page">About</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="mywork.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">My Work</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="webdev.html"></a></li>
-                            <li><a class="dropdown-item" href="photography.html"></a></li>
-                            <li><a class="dropdown-item" href="art.html"></a></li>
-                        </ul>
+                        <a href="mywork.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">My Work</a>
+                        <div class="dropdown-menu">
+                            <a href="photography.html" class="dropdown-item" aria-current="page">Photography</a>
+                            <a href="webdev.html" class="dropdown-item">Web Development</a>
+                            <a href="art.html" class="dropdown-item">Art</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="services.html">Services</a>
@@ -41,6 +44,7 @@
                 </ul>
             </div>
         </div>
+    </nav>
     </nav>
     <main>
         <div class="photography-banner">
