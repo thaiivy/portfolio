@@ -566,9 +566,62 @@ footer {
     filter: invert(100%);
 }
 
-.footercarouselpadding {
-    margin-top: 3rem;
+/* .carousel1 {
+    grid-area: carousel1;
+    padding: 2rem;
 }
+
+.carousel2 {
+    grid-area: carousel2;
+    padding: 2rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "carousel1"
+    "carousel2"
+} */
+
+/* Media Queries for Web Dev page */
+/* Tablet */
+/* @media screen and (min-width:760px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "carousel1"
+        "carousel2"
+    }
+
+}
+
+/* Desktop */
+/* @media screen and (min-width:1024px) {
+    .footercarouselpadding {
+        margin-top: 3rem;
+    }
+
+    .carousel1 {
+        padding: 0rem;
+    }
+    
+    .carousel2 {
+        padding: 0rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "carousel1 carousel2"
+    }
+} */ */
+
 
 /* ------------------ART PAGE------------------- */
 .art-banner {
