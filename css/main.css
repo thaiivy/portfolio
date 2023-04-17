@@ -164,7 +164,20 @@ footer {
         padding-right: 2em;
     }
 
+    
+    .main-grid {
+        text-align: center;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "services"
+        "mywork"
+        ;
+    }
 }
+
 
 /* Desktop */
 @media screen and (min-width:1024px) {
@@ -189,7 +202,7 @@ footer {
         text-align: center;
         display: grid;
         width: 100%;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         grid-template-areas:
         "services mywork"
@@ -211,6 +224,8 @@ footer {
     color: white;
     font-size: 3rem;
     padding-top: 7.5rem;
+    background-color: rgba(47, 72, 88, 0.6);
+    height: 20rem;
 }
 
 .donestuff {
@@ -500,6 +515,8 @@ footer {
     color: white;
     font-size: 3rem;
     padding-top: 7.5rem;
+    background-color: rgba(47, 72, 88, 0.6);
+    height: 20rem;
 }
 
 /* Media Queries for Photography page */
@@ -529,8 +546,29 @@ footer {
     color: white;
     font-size: 3rem;
     padding-top: 7.5rem;
+    background-color: rgba(47, 72, 88, 0.6);
+    height: 20rem;
 }
 
+.pastprojects {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #2F4858;
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+.carousel-caption {
+    color: white;
+    background-color: rgba(47, 72, 88, 1);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+.footercarouselpadding {
+    margin-top: 3rem;
+}
 
 /* ------------------ART PAGE------------------- */
 .art-banner {
@@ -546,6 +584,8 @@ footer {
     color: white;
     font-size: 3rem;
     padding-top: 7.5rem;
+    background-color: rgba(47, 72, 88, 0.6);
+    height: 20rem;
 }
 
 /* Media Queries for Art page */
